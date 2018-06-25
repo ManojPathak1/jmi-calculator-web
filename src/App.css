@@ -1,0 +1,23 @@
+.App {
+  height: 100%;
+  width: 100%;
+  border: 1px red solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #ccc;
+  height: 50px;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px red solid;
+  overflow: auto;
+}
+.bottom {
+  background: #ccc;
+  height: 50px;
+}
