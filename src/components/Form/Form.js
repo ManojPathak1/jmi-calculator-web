@@ -22,10 +22,11 @@ class Form extends Component {
   }
 
   onChangeInput = (event) => {
-    const { semPointers } = this.state;
+    let { semPointers } = this.state;
     const { name, value } = event.target;
-    if (value <= 10) {
-      this.setState({ ...semPointers, [name]: Number(value).toFixed(2) }, () => this.props.onChangeInput(event, this.state.semPointers));
+    if (Number(value) <= 10) {
+      semPointers[name] = value; 
+      this.setState({ semPointers }, () => this.props.onChangeInput(event, this.state.semPointers));
     }
   }
 
