@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Result.css';
 import icons from '../../utils/icon';
-import { WHATS_APP_ANDROID } from '../../utils/urls';
+import URL from '../../utils/urls';
 
 class Result extends Component {
   render() {
     const { pointers, percentage } = this.props.result;
     const { whatsappIcon } = icons;
-    const whatsAppUrl = `${WHATS_APP_ANDROID}?text=POINTERS: ${pointers.toFixed(2)}, PERCENTAGE: ${percentage.toFixed(2)}`;
+    const { WHATS_APP, WHATS_APP_ANDROID } = URL;
+    const whatsAppUrl = `${WHATS_APP}?text=POINTERS: ${pointers.toFixed(2)}, PERCENTAGE: ${percentage.toFixed(2)}`;
     return (
       <div className='resultContainer'>
         <div style={{ marginTop: '10px' }}>
