@@ -14,11 +14,11 @@ class Result extends Component {
       <div className='resultContainer'>
         <div style={{ marginTop: '10px' }}>
           <span style={{ fontFamily: 'OpenSansBold', color: '#ccc', fontSize: '60px' }}>{pointers.toFixed(2)}</span>&nbsp;&nbsp;
-                    <span style={{ fontFamily: 'OpenSansBold', color: '#ccc' }}>Pointers</span>
+          <span style={{ fontFamily: 'OpenSansBold', color: '#ccc' }}>Pointers</span>
         </div>
         <div>
           <span style={{ fontFamily: 'OpenSansBold', color: '#ccc', fontSize: '60px' }}>{percentage.toFixed(2)}</span>&nbsp;&nbsp;
-                    <span style={{ fontFamily: 'OpenSansBold', color: '#ccc' }}>Percentage</span>
+          <span style={{ fontFamily: 'OpenSansBold', color: '#ccc' }}>Percentage</span>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '30px' }}>
           <span style={{ fontFamily: 'OpenSansBold', color: '#bbb' }}>Share on</span>

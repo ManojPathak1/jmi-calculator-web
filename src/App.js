@@ -35,7 +35,7 @@ class App extends Component {
 
   componentDidMount() {
     postman.subscribe('notify', (obj) => {
-      notify.show(<span style={{fontFamily: "OpenSansBold"}}>{obj.message}</span>, obj.type, 3000);
+      notify.show(<span style={{ fontFamily: "OpenSansBold" }}>{obj.message}</span>, obj.type, 3000);
     });
   }
 
@@ -105,26 +105,26 @@ class App extends Component {
         break;
       case 4:
         pointers = ((semPointers.sem1 + semPointers.sem2) * 0.25
-        + (semPointers.sem3 + semPointers.sem4) * 0.50) * (2 / 3);
+          + (semPointers.sem3 + semPointers.sem4) * 0.50) * (2 / 3);
         break;
       case 5:
         pointers = ((semPointers.sem1 + semPointers.sem2) * 0.25
-        + (semPointers.sem3 + semPointers.sem4) * 0.50 + semPointers.sem5 * 0.75) * (4 / 9);
+          + (semPointers.sem3 + semPointers.sem4) * 0.50 + semPointers.sem5 * 0.75) * (4 / 9);
         break;
       case 6:
         pointers = ((semPointers.sem1 + semPointers.sem2) * 0.25
-        + (semPointers.sem3 + semPointers.sem4) * 0.50 + (semPointers.sem5 + semPointers.sem6) * 0.75)
-        * (1 / 3);
+          + (semPointers.sem3 + semPointers.sem4) * 0.50 + (semPointers.sem5 + semPointers.sem6) * 0.75)
+          * (1 / 3);
         break;
       case 7:
         pointers = ((semPointers.sem1 + semPointers.sem2) * 0.25
-        + (semPointers.sem3 + semPointers.sem4) * 0.5 + (semPointers.sem5 + semPointers.sem6) * 0.75
-        + (semPointers.sem7) * 1) * (1 / 4);
+          + (semPointers.sem3 + semPointers.sem4) * 0.5 + (semPointers.sem5 + semPointers.sem6) * 0.75
+          + (semPointers.sem7) * 1) * (1 / 4);
         break;
       case 8:
         pointers = ((semPointers.sem1 + semPointers.sem2) * 0.25
-        + (semPointers.sem3 + semPointers.sem4) * 0.5 + (semPointers.sem5 + semPointers.sem6) * 0.75
-        + (semPointers.sem7 + semPointers.sem8) * 1) * (1 / 5);
+          + (semPointers.sem3 + semPointers.sem4) * 0.5 + (semPointers.sem5 + semPointers.sem6) * 0.75
+          + (semPointers.sem7 + semPointers.sem8) * 1) * (1 / 5);
         break;
       default: // Default case
         break;

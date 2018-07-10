@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Form.css';
 import PropTypes from 'prop-types';
+import './Form.css';
 import Result from '../Result/Result';
 
 class Form extends Component {
@@ -25,8 +25,7 @@ class Form extends Component {
     let { semPointers } = this.state;
     const { name, value } = event.target;
     if (Number(value) <= 10) {
-      semPointers[name] = value; 
-      this.setState({ semPointers }, () => this.props.onChangeInput(event, this.state.semPointers));
+      this.setState({ semPointers: { ...semPointers, [name]: value } }, () => this.props.onChangeInput(event, this.state.semPointers));
     }
   }
 
