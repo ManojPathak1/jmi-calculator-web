@@ -9,7 +9,7 @@ class Result extends Component {
     const { pointers, percentage } = this.props.result;
     const { whatsappIcon } = icons;
     const { WHATS_APP, WHATS_APP_ANDROID } = URL;
-    const whatsAppUrl = `${WHATS_APP}?text=POINTERS: ${pointers.toFixed(2)}, PERCENTAGE: ${percentage.toFixed(2)}`;
+    const whatsAppUrl = `${WHATS_APP_ANDROID}?text=POINTERS: ${pointers.toFixed(2)}, PERCENTAGE: ${percentage.toFixed(2)}`;
     return (
       <div className='resultContainer'>
         <div style={{ marginTop: '10px' }}>
