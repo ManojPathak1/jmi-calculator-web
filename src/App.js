@@ -15,7 +15,7 @@ const { SAVED_RESULT } = LOCAL_STORAGE_KEYS;
 
 class App extends Component {
 
-  constructor(props, context) {
+  constructor(props) {
     super(props);
     this.result = {};
     this.semPointers = {};
@@ -77,6 +77,7 @@ class App extends Component {
     switch (view) {
       case FORM:
         this.computeResult();
+        this.setState({ view: RESULT });
         break;
       case RESULT:
         postman.publish('notify', { message: 'Result saved !', type: 'success' });
@@ -131,7 +132,6 @@ class App extends Component {
     }
     percentage = (20 * pointers * pointers * pointers - 380 * pointers * pointers + 2725 * pointers - 1690) / 84;
     this.result = { pointers, percentage };
-    this.setState({ view: RESULT });
   }
 
   onClickBackBtn = () => {

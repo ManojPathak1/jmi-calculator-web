@@ -1,6 +1,6 @@
 {
   "short_name": "JMI Calculator",
-  "name": "Just Calculate...",
+  "name": "JMI Calculator",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#7B00F5",
   "background_color": "#ffffff"
 }

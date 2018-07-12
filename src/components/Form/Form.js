@@ -33,21 +33,69 @@ class Form extends Component {
     const { semPointers } = this.state;
     return (
       <React.Fragment>
-        <div style={{ display: 'flex', justifyContent: 'space-around', padding: '10px' }}>
-          <input value={semPointers.sem1} name='sem1' onChange={this.onChangeInput} placeholder="Sem 1" type='number' style={{ height: '50px', width: '90px', fontFamily: 'OpenSansBold', fontSize: '24px', textAlign: 'center', borderRadius: '5px', border: "1px #ccc solid" }} />
-          <input value={semPointers.sem2} name='sem2' onChange={this.onChangeInput} placeholder="Sem 2" type='number' style={{ height: '50px', width: '90px', fontFamily: 'OpenSansBold', fontSize: '24px', textAlign: 'center', borderRadius: '5px', border: "1px #ccc solid" }} />
+        <div className='inputContainer'>
+          <input
+            value={semPointers.sem1}
+            name='sem1'
+            onChange={this.onChangeInput}
+            placeholder='Sem 1'
+            type='number'
+            className='inputBox' />
+          <input
+            value={semPointers.sem2}
+            name='sem2'
+            onChange={this.onChangeInput}
+            placeholder='Sem 2'
+            type='number'
+            className='inputBox' />
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-around', padding: '10px' }}>
-          <input value={semPointers.sem3} name='sem3' onChange={this.onChangeInput} placeholder="Sem 3" type='number' style={{ height: '50px', width: '90px', fontFamily: 'OpenSansBold', fontSize: '24px', textAlign: 'center', borderRadius: '5px', border: "1px #ccc solid" }} />
-          <input value={semPointers.sem4} name='sem4' onChange={this.onChangeInput} placeholder="Sem 4" type='number' style={{ height: '50px', width: '90px', fontFamily: 'OpenSansBold', fontSize: '24px', textAlign: 'center', borderRadius: '5px', border: "1px #ccc solid" }} />
+        <div className='inputContainer'>
+          <input
+            value={semPointers.sem3}
+            name='sem3'
+            onChange={this.onChangeInput}
+            placeholder='Sem 3'
+            type='number'
+            className='inputBox' />
+          <input
+            value={semPointers.sem4}
+            name='sem4'
+            onChange={this.onChangeInput}
+            placeholder='Sem 4'
+            type='number'
+            className='inputBox' />
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-around', padding: '10px' }}>
-          <input value={semPointers.sem5} name='sem5' onChange={this.onChangeInput} placeholder="Sem 5" type='number' style={{ height: '50px', width: '90px', fontFamily: 'OpenSansBold', fontSize: '24px', textAlign: 'center', borderRadius: '5px', border: "1px #ccc solid" }} />
-          <input value={semPointers.sem6} name='sem6' onChange={this.onChangeInput} placeholder="Sem 6" type='number' style={{ height: '50px', width: '90px', fontFamily: 'OpenSansBold', fontSize: '24px', textAlign: 'center', borderRadius: '5px', border: "1px #ccc solid" }} />
+        <div className='inputContainer'>
+          <input
+            value={semPointers.sem5}
+            name='sem5'
+            onChange={this.onChangeInput}
+            placeholder='Sem 5'
+            type='number'
+            className='inputBox' />
+          <input
+            value={semPointers.sem6}
+            name='sem6'
+            onChange={this.onChangeInput}
+            placeholder='Sem 6'
+            type='number'
+            className='inputBox' />
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-around', padding: '10px' }}>
-          <input value={semPointers.sem7} name='sem7' onChange={this.onChangeInput} placeholder="Sem 7" type='number' style={{ height: '50px', width: '90px', fontFamily: 'OpenSansBold', fontSize: '24px', textAlign: 'center', borderRadius: '5px', border: "1px #ccc solid" }} />
-          <input value={semPointers.sem8} name='sem8' onChange={this.onChangeInput} placeholder="Sem 8" type='number' style={{ height: '50px', width: '90px', fontFamily: 'OpenSansBold', fontSize: '24px', textAlign: 'center', borderRadius: '5px', border: "1px #ccc solid" }} />
+        <div className='inputContainer'>
+          <input
+            value={semPointers.sem7}
+            name='sem7'
+            onChange={this.onChangeInput}
+            placeholder='Sem 7'
+            type='number'
+            className='inputBox' />
+          <input
+            value={semPointers.sem8}
+            name='sem8'
+            onChange={this.onChangeInput}
+            placeholder='Sem 8'
+            type='number'
+            className='inputBox' />
         </div>
       </React.Fragment>
     );
