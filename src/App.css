@@ -9,7 +9,7 @@
 .header {
   background-color: var(--primary);
   height: 50px;
-  color: #fff;
+  color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,7 @@
 }
 .bottom {
   height: 50px;
-  color: #fff;
+  color: var(--white);
   font-family: OpenSansBold;
   font-size: 16px;
   outline: none;

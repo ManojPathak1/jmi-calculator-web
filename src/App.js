@@ -39,7 +39,7 @@ class App extends Component {
     });
   }
 
-  onChangeInput = (event, semPointers) => {
+  onChangeInput = (semPointers) => {
     let isValid = false;
     let continuousFlag = true;
     let semCount = 0;

@@ -5,7 +5,7 @@ import Result from '../Result/Result';
 
 class Form extends Component {
 
-  constructor(props, context) {
+  constructor(props) {
     super(props);
     this.state = {
       semPointers: {
@@ -25,7 +25,7 @@ class Form extends Component {
     let { semPointers } = this.state;
     const { name, value } = event.target;
     if (Number(value) <= 10) {
-      this.setState({ semPointers: { ...semPointers, [name]: value } }, () => this.props.onChangeInput(event, this.state.semPointers));
+      this.setState({ semPointers: { ...semPointers, [name]: value } }, () => this.props.onChangeInput(this.state.semPointers));
     }
   }
 
